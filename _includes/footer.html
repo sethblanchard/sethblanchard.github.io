@@ -1,0 +1,64 @@
+<footer class="site-footer">
+	<h1 class="Logo footer--Logo">SB</h1>
+	<nav id="Footer-Menu" class="footer--Menu small-col-4">
+		<!--TODO: Try as a tree map?? -->
+		<ul class="footer--Nav">
+			<li class="footer--Nav--Item">
+				<a class="footer--Nav--Item--Link" href="/index.html">
+					Home
+				</a>
+			</li>
+			<li class="footer--Nav--Item">
+				<a class="footer--Nav--Item--Link" href="/writing.html">
+					Writing
+				</a>
+			</li>
+			<li class="footer--Nav--Item">
+				<a class="footer--Nav--Item--Link" href="/about.html">
+					About
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="col-1 small-col-4">
+		<h4>Highlighted Articles</h4>
+		<ul class="footer--FeaturedArticles">
+			{% for post in site.categories.highlighted %} 
+			<li class="footer--FeaturedArticles--Item">
+				<a href="PythagoreanPennants.html"  class="footer--FeaturedArticles--Item--Link">
+					{{ post.title }}
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="footer-Elsewhere col-1 small-col-4">
+		<h4 class="">Elsewhere</h4>
+		<ul class="footer--Nav">
+			<li class="footer--Nav--Item">
+				<a class="footer--Nav--Item--Link"  href="twitter">
+					Twitter
+				</a>
+			</li>
+			<li class="footer--Nav--Item">
+				<a class="footer--Nav--Item--Link"  href="soundcloud">
+					Soundcloud
+				</a>
+			</li>
+			<li class="footer--Nav--Item">
+				<a class="footer--Nav--Item--Link"  href="linkedin">
+					LinkedIn
+				</a>
+			</li>
+			<li class="footer--Nav--Item">
+				<a class="footer--Nav--Item--Link"  href="github">
+					Github
+				</a>
+			</li>
+		</ul>
+	</div>
+	<blockquote class="footer--Quote col-1 hide-small">
+		Torres Del Paine is my spirit animal.
+	</blockquote>
+	<span class="copyright">&#169; 2013 - 2014 Seth Blanchard</span>
+</footer>

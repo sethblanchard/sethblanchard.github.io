@@ -1,0 +1,92 @@
+---
+layout: empty
+title: Pythagorean Pennants
+subtitle: Repurposing the pennant on your wall to tell your favorite team's future
+category: highlighted
+---
+
+	<section id="Main" class="grid main active">
+		
+		{% include header.html %}
+
+		<h1 class="masthead">Pythagorean Pennants</h1>
+		<h2 class="byline">Repurposing the pennant on your wall to tell your favorite team's future</h2>
+		<div id="Chart" class="row">
+		</div>
+		<div class="row">
+			<article class="col-5">
+				<p>
+					In the offseason the spectacle of professional football is replaced with that of the business of the NFL. Players are cut, signed, drafted and retire.  In order to have an informed opinion[1] on our teams offseason dealings we need to know how good our team was last season. Not what their record was, but how good they really were. Are 'We' just missing one piece? Should we make trades or bottom out to acquire more or better draft picks? These decisions should be made with a solid grasp of the teams actual performance in hand. So if wins and losses don't tell us how well our team performed, what will? 
+				</p>
+				<h3>Enter Pythagoras</h3>
+				<p>
+					If wins don't tell us how good our team is what does? Point Differential. *Statistically, it is usually more important how much something happened by then just what happened[2]*. The Pythagorean Expectation takes point differential and turns it into expected the percent of games a team should have won. The Pythagorean Expectation was invented by Bill James for use in Baseball [3] before being translated to Basketball and Football. The Pennants above show a teams point difference (the horizontal line [4]) and the expected win difference (the vertical line). Now you can quickly see how good your team really was last year.
+				</p>
+
+				<h2>The Weight of Expectation</h2>
+				<p>
+					Now that we see how good teams really were last year, how good is the Pythagorean Expectation at predicting next years performance. The chart below shows the yearly wins - the solid line, read at the year axis - with the expected wins - area above or below the lines, again read at the year axis. Usually if a team won less games than it should have the next year it will win more games and vice versa. 
+				</p>
+				<div id="parallelCoordinates">
+				</div>
+				<p>
+					As you can see the Pythagorean Expectation usually gives a good indication of how your team will do next year. You'll also notice it isn't always right. This is because the Pythagorean Expectation doesn't account for a teams offseason moves, something I'm sure you now have a more informed opinion of.
+				</p>
+				<footer>
+					<ol>
+						<li id="footnote_1">
+							Bill James - inventor of Sabermatrics... <a href="#footnoteLink_1">^</a>
+						</li>
+						<li id="footnote_1">
+							Daryl Morely - houston rockets GM and ... <a href="#footnoteLink_1">^</a>
+						</li>
+						<li id="footnote_3">
+							Football Outsidres - inventor of Sabermatrics... <a href="#footnoteLink_3">^</a>
+						</li>
+					</ol>
+				</footer>
+			</article>
+		</div>
+		<div class="row">
+			<section class="col-3 ">
+				<h4>About this Graphic</h4>
+				<p>
+					After learning about the pythagorean expectation as well as some other stats (upcoming graphics), mostly by reading @BillBarnwell I wasnted to see what the pythagorean would literally look like. 
+				</p>
+				<p>
+					I was unsure if the triangles would communicate how I think about the expecation, but after switching from a scatter plot to a series of small multiples I was pleasantly surprised with the result. 
+				</p>
+				<p >
+					As with most things this graphic is really a remix. And in that same spirit, grab the data and grab the code and make something different from it.
+					<a href="#">Data</a>
+					<a href="#">Fork on Github</a>
+				</p>
+			</section>
+			<section class="col-2">
+				<h4>References</h4>
+				<ul>
+					<li>Profootball-reference</li>
+					<li>Barnwell Regression</li>
+					<li>Data Sets - url</li>
+				</ul>
+			</section>
+		</div>
+	</section>
+
+	{% include footer.html %}
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+		<script src="/js/vendor/d3.v3.min.js"></script>
+    <script src="/js/pythagoreanpennants.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+

@@ -1,0 +1,21 @@
+---
+layout: master
+title: Articles, Visualizations, Writing - Code or English
+---
+
+  <h1 class="masthead">Writing</h1>
+  <h2 class="byline">Articles, Visualizations, Writing - Code or English</h2>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+      	<a href="{{ post.url }}">
+      	<h3>{{ post.title }}</h3>
+      	<h4>{{ post.subtitle }}</h4>
+      	</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+<div class="row">
+<blockquote>I'm just getting started</blockquote>
+</div>
