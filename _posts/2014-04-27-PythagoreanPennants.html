@@ -16,32 +16,36 @@ category: highlighted
 		<div class="row">
 			<article class="col-5">
 				<p>
-					In the offseason the spectacle of professional football is replaced with that of the business of the NFL. Players are cut, signed, drafted and retire.  In order to have an informed opinion[1] on our teams offseason dealings we need to know how good our team was last season. Not what their record was, but how good they really were. Are 'We' just missing one piece? Should we make trades or bottom out to acquire more or better draft picks? These decisions should be made with a solid grasp of the teams actual performance in hand. So if wins and losses don't tell us how well our team performed, what will? 
+					How good was your team last year? Really, how good were they? I know, if that pass in week 9 was a little higher you sneak into the playoffs. Your favorite player doesn't get injured in week 4 - you win the division. You lost 10 games but the season felt better than that.
+				</p>
+				<p>
+					We all talk around how wins, in the NFL especially<sup><a id="footnotelink_1" href="#footnote_1">1</a></sup>, don't capture an accurate picture of how your team performed. So if we all implicitly state that wins aren't the right number, what is? Point Differential.
+				</p>
+				<p>
+					Point differential is the sum of the points a team scored minus the sum of the points it allowed for all the games it has played in a season. For example, this year the New England Patriots won 12 games and had a point differential of +55 for the season, where as the Arizona Cardinals won 10 and also had a point differential of +55 points. Two different win totals, same difference in points score and points allowed for the entire season.		
 				</p>
 				<h3>Enter Pythagoras</h3>
 				<p>
-					If wins don't tell us how good our team is what does? Point Differential. *Statistically, it is usually more important how much something happened by then just what happened[2]*. The Pythagorean Expectation takes point differential and turns it into expected the percent of games a team should have won. The Pythagorean Expectation was invented by Bill James for use in Baseball [3] before being translated to Basketball and Football. The Pennants above show a teams point difference (the horizontal line [4]) and the expected win difference (the vertical line). Now you can quickly see how good your team really was last year.
+					So we have a better picture of how good our team was - eh (shrugs) - what are we going to do with that? This is where we bring back 8th grade geometry and apply Pythagoras. Not exactly the Pythagorean Theorem, but the Pythagorean Expectation. The Pythagorean <sup><a id="footnotelink_2" href="#footnote_2">2</a></sup> Expectation takes point differential and turns it into an expected number of wins. The pennants above display this visually. The horizontal line show the point difference while the vertical line shows the difference in expected wins. You can quickly tell which team should have won (or lost) more games and the relationship between expected wins and point differential.
 				</p>
 
 				<h2>The Weight of Expectation</h2>
 				<p>
-					Now that we see how good teams really were last year, how good is the Pythagorean Expectation at predicting next years performance. The chart below shows the yearly wins - the solid line, read at the year axis - with the expected wins - area above or below the lines, again read at the year axis. Usually if a team won less games than it should have the next year it will win more games and vice versa. 
+					Now that we have aligned reality with our expectations what can we do with this new number. It turns out that the expected wins (and wether it was more or less) have an impact on the future. A team that was expected to win more games than it did usually does the next season and vice versa. The chart below shows how a teams expectations can weigh down or buoy wins for the next season. It isn't exact<sup><a id="footnotelink_3" href="#footnote_3">3</a></sup> but it can give us a good idea of the direction our team is heading next season.
 				</p>
 				<div id="parallelCoordinates">
 				</div>
-				<p>
-					As you can see the Pythagorean Expectation usually gives a good indication of how your team will do next year. You'll also notice it isn't always right. This is because the Pythagorean Expectation doesn't account for a teams offseason moves, something I'm sure you now have a more informed opinion of.
-				</p>
-				<footer>
-					<ol>
+				
+				<footer class="row">
+					<ol class="col-5">
 						<li id="footnote_1">
-							Bill James - inventor of Sabermatrics... <a href="#footnoteLink_1">^</a>
+							Because the sample size in the NFL - 16 games - is so small. <a href="#footnotelink_1">^</a>
 						</li>
-						<li id="footnote_1">
-							Daryl Morely - houston rockets GM and ... <a href="#footnoteLink_1">^</a>
+						<li id="footnote_2">
+							It is named the Pythagorean Expectation because the formula looks a lot like the one you learned in middle school. It was invented by Bill James and applied first to baseball and has since moved to other sports with slightly different formulas. Learn more about the <a href="http://en.wikipedia.org/wiki/Pythagorean_expectation">Pythagorean Expectation</a>. <a href="#footnotelink_2">^</a>
 						</li>
 						<li id="footnote_3">
-							Football Outsidres - inventor of Sabermatrics... <a href="#footnoteLink_3">^</a>
+							It doesn't take into account things like player movement. So while the 2011 Broncos should have not won quite as many games the following seasons adding Payton Manning is clearly a difference maker. <a href="#footnotelink_3">^</a>
 						</li>
 					</ol>
 				</footer>
@@ -49,26 +53,15 @@ category: highlighted
 		</div>
 		<div class="row">
 			<section class="col-3 ">
-				<h4>About this Graphic</h4>
-				<p>
-					After learning about the pythagorean expectation as well as some other stats (upcoming graphics), mostly by reading @BillBarnwell I wasnted to see what the pythagorean would literally look like. 
-				</p>
-				<p>
-					I was unsure if the triangles would communicate how I think about the expecation, but after switching from a scatter plot to a series of small multiples I was pleasantly surprised with the result. 
-				</p>
-				<p >
-					As with most things this graphic is really a remix. And in that same spirit, grab the data and grab the code and make something different from it.
-					<a href="#">Data</a>
-					<a href="#">Fork on Github</a>
-				</p>
+				<p>I learned about the Pythagorean Expectation by reading <a href="https://twitter.com/billbarnwell">Bill Barnwell</a>'s work on <a href="http://grantland.com/contributors/bill-barnwell/">Grantland</a>. It made being a fan of the football team in our nations capitol even more frustrating but provided insight into teams performance from year to year that I really have enjoyed having. I wanted to</p>
 			</section>
 			<section class="col-2">
 				<h4>References</h4>
 				<ul>
-					<li>Profootball-reference</li>
-					<li>Barnwell Regression</li>
-					<li>Data Sets - url</li>
-				</ul>
+					<li>Data is from <a href="http://www.pro-football-reference.com">Pro-Football Reference</a> and is available as a <a href="https://docs.google.com/spreadsheets/d/1XkJxHtFrhZOgBjxJXMIejxepBolQhBO_KXgtbAGcHhE/pubhtml">google doc</a>.</li>
+					<li>The charts were built using <a href="http://d3js.org">d3.js</a> and specifically <a href="http://bl.ocks.org/mbostock/3884955">these</a> <a href="http://bl.ocks.org/mbostock/1166403">three</a> <a href="http://bl.ocks.org/mbostock/8027637">examples</a>.</li>
+					<li>This is clearly a remix so I'd love to see what you do with the data and the statistical approach. Let me know <a href="https://twitter.com/sethblanchard">@sethblanchard</a>.</li>
+					</ul>
 			</section>
 		</div>
 	</section>
