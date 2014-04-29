@@ -1,0 +1,121 @@
+.team{
+	width: 16.666666667%;
+}
+
+.team--label{
+	font-size: 0.85em;
+	text-align: left;
+	fill:#3D4859;
+	font-family: $serif;
+}
+
+
+#parallelCoordinates svg {
+  font: 10px sans-serif;
+}
+
+
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis .domain{
+	stroke:none;
+}
+
+.x.axis line{
+	stroke: white;
+	stroke-width:2.5px;
+}
+
+.y.axis line{
+	stroke:#8A8A8A;
+}
+
+.axis text {
+  text-shadow: 0 1px 0 #fff;
+  font-size: 1.5em;
+}
+
+.legend--rect{
+	opacity:0.5;
+	fill:darkgray;
+}
+
+.legend--rect.below{
+	fill:#003B7B;
+}
+
+
+.legend--rect.above{
+	fill:#006DB0;
+}
+
+.legend--line{
+  stroke-width: 3.5px;
+  stroke:steelblue;
+}
+
+.legend--axis{
+	stroke: white;
+	stroke-width:2.5px;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 3.5px;
+  opacity:0.1;
+  z-index:10;
+
+}
+
+.hovering .line{
+	opacity: 0.05;
+}
+
+.hovering .line--hover.line{
+	opacity:1;
+}
+
+.team--name{
+	opacity: 0;
+	font-size: 1.7em;
+}
+
+.line--hover ~ .team--name{
+	opacity: 1;
+}
+
+.hovering .line--hover ~ .team--name{
+	opacity: 1;
+}
+
+.team--area{
+	opacity: 0.05;
+	z-index:1;
+}
+
+.hovering .team--area{
+	opacity: 0.02;
+	z-index:1;
+}
+
+.hovering .line--hover ~ .team--area{
+	opacity: 0.5;
+}
+
+
+.mouse--over{
+	opacity:0;
+}		
+
+
+@media (max-width: $medium) {
+	.team{
+		width: 33.333333%;
+	}
+}

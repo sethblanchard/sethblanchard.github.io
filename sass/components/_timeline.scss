@@ -1,0 +1,210 @@
+$year:75px;
+$triangle-size:10px;
+
+.abtAside--Timeline{
+	overflow:auto;
+	padding-bottom:40px;
+}
+
+.abtAside--Subtitle{
+	width: 48%;
+	font-size: 1.1em;
+	font-family: "clear_sansbold";
+	display: inline-block;
+	box-sizing:border-box;
+	float: left;
+	text-transform: uppercase;
+	margin: 10px 0 5px;
+}
+
+h5.profesional{
+	text-align: right;
+	color:$darker-base;
+	margin-right:2%;
+}
+
+h5.personal{
+	text-align: left;
+	color:$second-highlight;
+	margin-left:2%;
+}
+
+.timeline{
+	width:50%;
+	float:left;
+	padding:0;
+	margin:0;
+	list-style:none;
+	box-sizing:border-box;
+	position:relative;
+	height:$year*10.5;
+}
+
+.timeline--work{
+	text-align:right;
+	border-right:solid 5px $darker-base;
+	padding-right:5px;
+
+	.timeline--item{
+		background: darken($nuetral, 3);
+		//border-bottom: solid 2px $darker-base;
+		padding:10px;
+		right:0;
+	}
+	.timeline--item--date{
+		position:absolute;
+		bottom:5px;
+		right:5px;
+	}
+
+	.timeline--item::after{
+		border-left: $triangle-size solid transparent;
+		//border-right: $triangle-size solid transparent;
+		border-top: $triangle-size solid $darker-base;
+		right:0;
+	}
+
+	.timeline--item--title{
+		position: absolute;
+		bottom: 1.5em;
+		width: 100%;
+		right: 5px;
+		text-align: right;
+	}
+}
+
+.timeline--home{
+	text-align:left;
+	border-left: solid 5px $second-highlight;
+	padding-left:5px;
+	position:relative;
+
+	.timeline--item{
+		//border-bottom: solid 2px $second-highlight;
+		left:0;
+	}
+
+	.timeline--item::after{
+		//border-left: 15px solid transparent;
+		border-right: $triangle-size solid transparent;
+		border-top: $triangle-size solid $second-highlight;
+		left:0;
+	}
+}
+
+.timeline--item{
+	position: absolute;
+	width:100%;
+	padding:10px 10px 0;
+	box-sizing:border-box;
+}
+
+.timeline--item::after{
+	content:"";
+	display:block;
+	position:absolute;
+	bottom:-$triangle-size;
+	width: 0; 
+	height: 0;
+}
+
+.time--instance{
+
+}
+
+.time--span{ }
+
+//should absolutely position the other images
+.yr-05{height:$year/2;}
+.yr-1{height:$year;}
+.yr-2{height:$year*2;}
+.yr-3{height:$year*3;}
+.yr-4{height:$year*4;} 
+.yr-5{height:$year*5;}
+
+.timeline--item--date{
+	font-family: $serif;
+	color: $primary-highlight;
+	display:block;
+	font-size:1em;
+}
+
+.timeline--item--title{
+	font-weight:bold;
+	color:$darker-base;
+	font-family:$sans-bold;
+	margin:0px;
+	line-height: 0.95em;
+	letter-spacing: -0.05em;
+}
+
+.timeline--item--sublist{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+
+.timeline--item--sublist--item{
+
+}
+
+.timeline--start{
+	display:block;
+	width:100%;
+	text-align:center;
+	color: $primary-highlight;
+	font-family:$serif;
+	position:relative;
+	float:left;
+	padding-top:10px;
+}
+.timeline--start:before{
+	content: "●";
+	top: -20px;
+	color: #e0321b;
+	z-index: 2000;
+	font-size: 2em;
+	left: 48%;
+	position:absolute;
+}
+
+
+.timeline--start--time{
+	display:block;
+	width:100%;
+	text-align:center;
+}
+
+//Positions
+.austrailia{ bottom:$triangle-size; }
+.machupichu{ bottom:274px;}
+.marriage{ bottom:347.75px }
+.chile{ bottom:430px;}
+.dr{ bottom:485px; }
+.homeowner{ bottom:525px; }
+.clara{ bottom:600px;  }
+.homerenoend{ bottom:660px;  }
+.theo{ top:0;}
+
+.noblis{
+	top:0;
+	height:460px;//not accurate but functional
+	z-index:10000;
+}
+.pioneers{
+	bottom:247px;
+	z-index:900;
+}
+.saic{
+	bottom:$triangle-size*2;
+	z-index:800
+}
+
+//Mobile Tweaks
+@media (max-width: $medium) {
+
+	.timeline--start:before{
+		left: 48.5%;
+	}
+
+}

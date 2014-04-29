@@ -1,0 +1,134 @@
+//Footer stuff
+
+
+.site-footer{
+	@include box-sizing(border-box);
+	background: $darker-base;
+	padding:2.5%;
+	position:relative;
+	overflow:hidden;
+	height:40%;
+}
+
+footer h4{
+	font-size:0.9em;
+	color:$nuetral;
+	margin-top:0;
+	margin-bottom:10px;
+	padding-top:0;
+}
+
+.Logo.footer--Logo{
+	color:$darker-base;
+	float:left;
+}
+
+.footer--Menu{
+	margin-left:4%;
+	width:10%;
+	padding-right:4%;
+	box-sizing: border-box;
+	font-size:1.25em;
+	float:left;
+} 
+
+.footer--Nav{
+	list-style:none;
+	height:100%;
+	padding:0;
+	margin:0;
+	display:inline-block;
+	padding-right:4%;
+}
+
+.footer--Nav--Item{
+	display:block;
+}
+
+a.footer--Nav--Item--Link{
+	display:block;
+	//color:$neutral;
+	width:100%;
+	padding:1.5% 1.5% 1.5% 0;
+}
+
+a:hover.footer--Nav--Item--Link{
+	background: $darker-base;
+}
+
+footer .featuredAtricles{
+	//width:20%;
+	//float:left;
+	height:100%;
+	display:inline-block;
+}
+
+.footer--FeaturedArticles{
+	list-style:none;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+.footer--FeaturedArticles--Item{
+
+}
+
+.footer--FeaturedArticles--Title{
+
+}
+
+.footer--FeaturedArticles--Item--Link{
+	padding:1.5% 1.5% 1.5% 0;
+
+}
+
+a:hover.footer--FeaturedArticles--Item--Link{
+	background: $darker-base;
+}
+
+.footer-Elsewhere{
+	//width:20%;
+	//float:left;
+	height:100%;
+	display:inline-block;
+
+}
+
+.footer--Quote{
+	//display:inline-block;
+	padding:0;
+	margin-top:0;
+}
+
+.copyright{
+	position:absolute;
+	bottom:5px;
+	right:5px;
+	text-align:right;
+	color:$nuetral;
+	font-size:0.7em;
+}
+
+@media (max-width: $medium) {
+
+	.site-footer{
+		height:65%;
+	}
+	.footer--Menu{
+		width:100%;
+		margin:20px 0 20px;
+	}
+
+	.footer--FeaturedArticles{
+		margin-bottom: 20px;
+	}
+
+	.footer-Elsewhere{
+		margin-bottom:20px;
+	}
+
+}
+
+
+

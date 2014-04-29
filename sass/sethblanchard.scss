@@ -1,0 +1,97 @@
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+@import "normalize.css";
+@import "globals";
+@import "type";
+@import "grid";
+@import "components/titlebar";
+@import "about";
+@import "components/timeline";
+@import "components/writing";
+@import "components/footer";
+
+//Individual Articles - will handle in the build process in the future
+@import "articles/pythagoreanPennants";
+
+
+html{
+	height:100%;
+}
+
+body{
+  	background: $nuetral;
+}
+
+p{
+	margin:0 0 0.977em;
+}
+
+a:hover{
+	background: darken($nuetral, 2);
+}
+
+.main{
+  max-width: 1073.741px;
+  margin: 0 auto;
+  width:95%;	
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// .main.active{
+// 	margin-left:21.5%;
+// }
+
+blockquote{
+	display:block;
+	font-size:2em;
+	font-family:$serif;
+	color:$primary-highlight;
+}
+
+blockquote.inContext{
+	display:block;
+	margin:10px;
+	float:left;
+}
+
+img{
+	max-width: 100%;
+}
+
+.masthead,
+h1.masthead{
+	text-align: center;
+	border-bottom: solid 1px rgba(0,0,0,0.2);
+	margin-bottom: 0;
+	padding: 100px 0 10px;
+}
+
+.byline,
+h2.byline{
+	font-size: 1.25em;
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: 60px;
+}
+
+.articleFooter{
+	font-size: 0.85em;
+}
+
+.articleFooter--Header{
+	margin-bottom:0px;
+}
+
+.footnote{
+	margin:10px;
+	
+}
+
+@media (max-width: $medium) {
+
+}
+

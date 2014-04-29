@@ -1,0 +1,134 @@
+/* Modular Scale ---------------------- 
+(http://modularscale.com/) thanks Tim (http://nicewebtype.com)!
+64px @ 1:1.6	  
+18px @ 1:1.6    
+----------------------*/
+
+//Load some fonts
+//TODO: Optimize... 
+@font-face {
+    font-family: 'clear_sansbold';
+    src: url('../content/fonts/ClearSans-Bold-webfont.eot');
+    src: url('../content/fonts/ClearSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../content/fonts/ClearSans-Bold-webfont.woff') format('woff'),
+         url('../content/fonts/ClearSans-Bold-webfont.ttf') format('truetype'),
+         url('../content/fonts/ClearSans-Bold-webfont.svg#clear_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'clear_sansitalic';
+    src: url('../content/fonts/ClearSans-Italic-webfont.eot');
+    src: url('../content/fonts/ClearSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../content/fonts/ClearSans-Italic-webfont.woff') format('woff'),
+         url('../content/fonts/ClearSans-Italic-webfont.ttf') format('truetype'),
+         url('../content/fonts/ClearSans-Italic-webfont.svg#clear_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'clear_sansregular';
+    src: url('../content/fonts/ClearSans-Regular-webfont.eot');
+    src: url('../content/fonts/ClearSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../content/fonts/ClearSans-Regular-webfont.woff') format('woff'),
+         url('../content/fonts/ClearSans-Regular-webfont.ttf') format('truetype'),
+         url('../content/fonts/ClearSans-Regular-webfont.svg#clear_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+$serif: 'Arvo', Georgia, Serif;
+$sans: 'clear_sansregular', Arial,  Sans-Serif;
+$sans-bold: 'clear_sansbold';
+
+html{
+    font-size: 16px; //This is so I can use ems @ 16
+}
+
+body, p, a {
+  font-family: $sans;
+}
+
+h1, h3, h5, cite, blockquote{
+	font-family: $serif;
+	color: $primary-highlight;
+}
+
+h2, h4, h6, label{
+	font-family: $sans-bold;
+}
+
+body{
+  background: $nuetral;
+  color: $base;
+  font-size: 1.125em; // or 18px
+}
+
+h1{
+    font-size:4em; /*scale original*/
+    color: $primary-highlight;
+    font-weight:normal;
+    margin:0 0 1.125em;
+}
+
+h1.pHeader{
+    margin: 1.125em 0 0;
+}
+
+h2{
+    font-size:2.5em;
+    color: $darker-base;
+    margin:0 0 0.977em;
+
+}
+
+h2.pHeader{
+    margin: 0.977em 0 0;
+}
+
+
+h3{
+    font-size:1.8em;
+    font-weight:normal;
+    margin: 0 0 0.703em; 
+}
+
+h3.pHeader{
+    margin: 0.703em 0 0;
+}
+
+
+h4{
+    font-size: 1.563em;
+}
+
+h5{
+    font-size: 1.563em;
+}
+
+h6{
+    font-size: 1.125em;
+}
+
+h1.first-Header,
+h2.first-Header,
+h3.first-Header{
+    margin-top: 0;
+}
+
+a{
+	color: $second-highlight;   
+}
+
+@media (max-width: $small) {
+  h1{
+    font-size: 3em;
+  }
+}

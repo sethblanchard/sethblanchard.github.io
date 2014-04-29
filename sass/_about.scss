@@ -1,0 +1,58 @@
+.aboutHeader.masthead{
+	margin-bottom:40px;
+}
+
+.abtAside{
+	font-size:0.8em;
+}
+
+.abtAside--Header{
+	font-size:1.5em;
+}
+
+.abtAside--Contact--email{
+
+	display:block;
+	margin-bottom:0.61em;
+	margin:0.382em 0;
+	font-size:1.2em;
+}
+
+.abtAside--Contact--resume{
+
+	display:block;
+	margin:0.382em 0;
+	font-size:1.2em;
+}
+
+.abtAside--eslwhere--link{
+	display:block;
+	margin:0.382em 0;
+	font-size:1.2em;
+	position:relative
+}
+
+.abtAside--eslwhere--link--activity{
+	color: darken($nuetral, 20);
+	display:inline-block;
+	margin-left:10px;
+	font-size: 0.9em;
+	position: absolute;
+	left: 25%;
+
+}
+.abtAside--eslwhere--link--activity:before{
+	content: "(";
+}
+
+.abtAside--eslwhere--link--activity:after{
+	content: ")";
+}
+
+
+.abtAside--eslwhere--link:hover{
+	.abtAside--eslwhere--link--activity{
+		color: darken($nuetral, 50);
+
+	}
+}
