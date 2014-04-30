@@ -8,7 +8,7 @@ title: Code and Sometimes English
     <ul class="writinglist">
       {% for post in site.posts %}
         <li class="articleItem">
-        	<a  class="articleItem--Link"  href="{{ post.url }}" {% if post.listBackground != blank %} style="background-image:url('{{post.listBackground}}');" {% endif %} >
+        	<a  class="articleItem--Link {% if post.listBackground == blank %} no-background {% endif %}"  href="{{ post.url }}" {% if post.listBackground != empty %} style="background-image:url('{{post.listBackground}}');" {% endif %} >
         	<h3 class="articleItem--Link--Title" >{{ post.title }}</h3>
         	<p class="articleItem--Link--Description" >{{ post.description }}</p>
         	</a>

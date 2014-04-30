@@ -125,7 +125,12 @@ a {
 @media (max-width: 600px) {
   /* line 131, ../sass/_type.scss */
   h1 {
-    font-size: 3em;
+    font-size: 2.75em;
+  }
+
+  /* line 134, ../sass/_type.scss */
+  h2 {
+    font-size: 2em;
   }
 }
 /* line 7, ../sass/_grid.scss */
@@ -642,6 +647,11 @@ h5.personal {
   margin: 0 0 120px;
 }
 
+/* line 7, ../sass/components/_writing.scss */
+.articleItem {
+  margin: 0 0 60px;
+}
+
 /* line 12, ../sass/components/_writing.scss */
 a.articleItem--Link,
 a.articleItem--Link:hover {
@@ -656,12 +666,19 @@ a.articleItem--Link:hover {
   border: solid 1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 24, ../sass/components/_writing.scss */
+/* line 26, ../sass/components/_writing.scss */
+a.articleItem--Link.no-background,
+a.articleItem--Link:hover.no-background {
+  background: #ededed;
+  padding: 2%;
+}
+
+/* line 31, ../sass/components/_writing.scss */
 .articleItem--Link--Title {
   margin: 0;
 }
 
-/* line 28, ../sass/components/_writing.scss */
+/* line 35, ../sass/components/_writing.scss */
 .articleItem--Link--Description {
   margin: 0;
 }
