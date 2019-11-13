@@ -1,0 +1,30 @@
+:root{
+    --notWhite: #eee;
+    --teal: #66c2a5;
+    --orange: #fc8d62;
+    --purple: #8da0cb;
+    --pink: #e78ac3;
+    --angle: -10deg;
+    --reverse-angle: 10deg;
+}
+
+.bg-notWhite{
+    background: var(--notWhite);
+}
+
+.bg-1st{
+    background: var(--teal);
+}
+
+.bg-2nd{
+    background: var(--purple);
+}
+
+.rotate{
+    transform: rotate(var(--angle))
+}
+
+.reverse-rotate{
+    transform: rotate(var(--reverse-angle))
+}
+
